@@ -24,15 +24,9 @@ The following Python packages are required to run the project:
 
 1. Clone the repository to your local machine.
 
-    ```bash
-    git clone https://github.com/Brandon-c-tech/AI-Calendar-Automation.git
-    ```
 
 2. Install the required Python packages.
 
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ## Usage
 
