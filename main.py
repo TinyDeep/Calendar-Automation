@@ -32,11 +32,11 @@ class NylasAPI:
         response = requests.get(url, headers=self._get_headers())
         return response.json()
 
-    def get_events(self, calendar_id: str, limit=5) -> List[Dict]:
-        # Fetches the latest events from a specific calendar
-        url = f'https://api.us.nylas.com/v3/grants/{self.grant_id}/events?calendar_id={calendar_id}&limit={limit}'
-        response = requests.get(url, headers=self._get_headers())
-        return response.json()
+    # def get_events(self, calendar_id: str, limit=5) -> List[Dict]:
+    #     # Fetches the latest events from a specific calendar
+    #     url = f'https://api.us.nylas.com/v3/grants/{self.grant_id}/events?calendar_id={calendar_id}&limit={limit}'
+    #     response = requests.get(url, headers=self._get_headers())
+    #     return response.json()
 
     def create_event(self, calendar_id: str, event_data: Dict) -> Dict:
         # Creates a new event in the specified calendar
